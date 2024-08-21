@@ -2,6 +2,9 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const cors = require("cors")
 const app = express()
+const praktikum = require("./routes/praktikumRoutes")
+
+app.use("/praktikum", praktikum)
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))

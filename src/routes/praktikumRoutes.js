@@ -6,6 +6,6 @@ app.use(express.json())
 const praktikumController = require('../controllers/praktikumController')
 
 app.get("/profil/:name/:age", praktikumController.profil)
-app.post("/bujur_sangkar", praktikumController.bujurSangkar)
+app.post("/bujurSangkar", praktikumController.bujurSangkar)
 
 module.exports = app
