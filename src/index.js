@@ -3,8 +3,10 @@ const bodyParser = require("body-parser")
 const cors = require("cors")
 const app = express()
 const praktikum = require("./routes/praktikumRoutes")
+const cube = require("./routes/cubeRoutes")
 
 app.use("/praktikum", praktikum)
+app.use("/cube", cube)
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
