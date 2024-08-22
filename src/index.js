@@ -7,7 +7,7 @@ const cube = require("./routes/cubeRoutes")
 const sphere = require("./routes/sphereRoutes")
 const cylinder = require("./routes/cylinderRoutes")
 const cone = require("./routes/coneRoutes")
-const temperature = require("./routes/temperature")
+const temperature = require("./routes/temperatureRoutes")
 
 app.use("/praktikum", praktikum)
 app.use("/cube", cube)
